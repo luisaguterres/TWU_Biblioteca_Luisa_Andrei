@@ -2,13 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="969697b7-f17f-41c4-8bc4-b38973a77058" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_bytebuddy_byte_buddy_1_9_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_bytebuddy_byte_buddy_agent_1_9_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mockito_mockito_core_2_28_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mockito_mockito_inline_2_13_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_objenesis_objenesis_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/TWU_Biblioteca_Luisa_Andrei.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/TWU_Biblioteca_Luisa_Andrei.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/BibliotecaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TWU_Biblioteca_Luisa_Andrei.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TWU_Biblioteca_Luisa_Andrei.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/TWU_Biblioteca_Luisa_Andrei/com/twu/biblioteca/ExampleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/TWU_Biblioteca_Luisa_Andrei/com/twu/biblioteca/ExampleTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/ExampleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/LibraryTest.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -22,15 +66,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1OgoRXk172UKhxFD7Rb6sHhRQmT" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -38,6 +85,10 @@
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.twu.biblioteca" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/.idea" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -55,7 +106,7 @@
   <component name="RunManager" selected="Application.BibliotecaApp">
     <configuration name="BibliotecaApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BibliotecaApp" />
-      <module name="TWU_Biblioteca_Luisa_Andrei" />
+      <module name="TWU_Biblioteca_Luisa_Andrei.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.twu.biblioteca.*" />
@@ -66,68 +117,85 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExampleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TWU_Biblioteca_Luisa_Andrei" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.ExampleTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="ExampleTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.twu.biblioteca.ExampleTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
     </configuration>
-    <configuration name="ExampleTest.shouldPrintMenu" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TWU_Biblioteca_Luisa_Andrei" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.ExampleTest" />
-      <option name="METHOD_NAME" value="shouldPrintMenu" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="ExampleTest.shouldReturnFailureMessageWhenCheckinInexistentBook" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.twu.biblioteca.ExampleTest.shouldReturnFailureMessageWhenCheckinInexistentBook&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
     </configuration>
-    <configuration name="ExampleTest.shouldReturnWelcomeMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TWU_Biblioteca_Luisa_Andrei" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.ExampleTest" />
-      <option name="METHOD_NAME" value="shouldReturnWelcomeMessage" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="ExampleTest.shouldReturnFailureMessageWhenCheckoutInexistentBook" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.twu.biblioteca.ExampleTest.shouldReturnFailureMessageWhenCheckoutInexistentBook&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
     </configuration>
-    <configuration name="LibraryTest.shouldReturnLibraryBooksList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TWU_Biblioteca_Luisa_Andrei" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.LibraryTest" />
-      <option name="METHOD_NAME" value="shouldReturnLibraryBooksList" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="ExampleTest.shouldReturnSuccessMessageWhenCheckintBook" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.twu.biblioteca.ExampleTest.shouldReturnSuccessMessageWhenCheckintBook&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
     </configuration>
     <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
@@ -154,11 +222,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ExampleTest" />
+        <item itemvalue="Gradle.ExampleTest.shouldReturnFailureMessageWhenCheckinInexistentBook" />
+        <item itemvalue="Gradle.ExampleTest.shouldReturnSuccessMessageWhenCheckintBook" />
         <item itemvalue="Application.BibliotecaApp" />
-        <item itemvalue="JUnit.ExampleTest.shouldPrintMenu" />
-        <item itemvalue="JUnit.ExampleTest.shouldReturnWelcomeMessage" />
-        <item itemvalue="JUnit.LibraryTest.shouldReturnLibraryBooksList" />
-        <item itemvalue="JUnit.ExampleTest" />
+        <item itemvalue="Gradle.ExampleTest.shouldReturnFailureMessageWhenCheckoutInexistentBook" />
       </list>
     </recent_temporary>
   </component>
@@ -194,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565405551811</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="The class book and the tests of class library.">
+      <created>1565615218290</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1565615218290</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -211,9 +286,11 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Shows a welcome message when loaded." />
     <MESSAGE value="Show the list books from library" />
     <MESSAGE value="Show the menu and the messages when the user checkout or checkin a book." />
-    <option name="LAST_COMMIT_MESSAGE" value="Show the menu and the messages when the user checkout or checkin a book." />
+    <MESSAGE value="The class book and the tests of class library." />
+    <option name="LAST_COMMIT_MESSAGE" value="The class book and the tests of class library." />
   </component>
 </project>

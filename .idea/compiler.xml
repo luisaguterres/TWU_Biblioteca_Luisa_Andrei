@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="TWU_Biblioteca_Luisa_Andrei.main" target="1.8" />
+      <module name="TWU_Biblioteca_Luisa_Andrei.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

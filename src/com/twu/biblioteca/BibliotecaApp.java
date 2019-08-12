@@ -27,11 +27,11 @@ public class BibliotecaApp {
         return option;
     }
 
-    private static String loadMenuOption(int selectedOption, Scanner scan) {
+    public static String loadMenuOption(int selectedOption, Scanner scan) {
         Library library = new Library();
         switch (selectedOption){
             case 1: {
-                return library.getBooks().toString();
+                return library.getAvailableBooks().toString();
             }
             case 2:{
                 System.out.print("Inform the name of the book: ");
@@ -44,6 +44,7 @@ public class BibliotecaApp {
             case 3: {
                 System.out.print("Inform the name of the book: ");
                 String bookName = scan.nextLine();
+                System.out.println(">>>>>>>>>>>>>>. "+bookName);
                 boolean checkin = library.checkinBookByTitle(bookName);
                 if (checkin){return "Thank you for returning the book.";}
                 else return "That is not a valid book to return.";
