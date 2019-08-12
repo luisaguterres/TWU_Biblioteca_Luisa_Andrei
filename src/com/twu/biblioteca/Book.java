@@ -2,7 +2,7 @@ package com.twu.biblioteca;
 
 import java.util.UUID;
 
-public class Book {
+public class Book extends Product {
 
     private String id;
     private String title;
@@ -21,6 +21,7 @@ public class Book {
     }
 
     public Book(String title, int publishYear, String author) {
+        super("Book");
         UUID uuid = UUID.randomUUID();
         this.id = uuid.toString();
         this.title = title;

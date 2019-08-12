@@ -49,6 +49,9 @@ public class BibliotecaApp {
                 if (checkin){return "Thank you for returning the book.";}
                 else return "That is not a valid book to return.";
             }
+            case 4: {
+                return library.getMovies().toString();
+            }
             case 0: {
                 scan.close();
                 System.exit(0);
@@ -65,6 +68,7 @@ public class BibliotecaApp {
         menuItens.add("1 - List of books");
         menuItens.add("2 - Checkout a Book");
         menuItens.add("3 - Checkin a Book");
+        menuItens.add("4 - List of Movies");
         menuItens.add("0 - Exit");
         return menuItens;
     }

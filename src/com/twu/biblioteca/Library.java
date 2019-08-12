@@ -6,23 +6,36 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class Library {
-    private List<Book> books;
-    private static List<Book> fakeList = new ArrayList<>(Arrays.asList(new Book("Harry Potter", 2001, "J.K. Rolling")));
+    private List<Product> products;
+    private static List<Product> fakeList = new ArrayList<>(Arrays.asList(
+            new Book("Harry Potter", 2001, "J.K. Rolling"),
+            new Movie("Matrix", 1999, "Lilly and Lana Wachowski", 8))
+    );
+
     public Library() {
         loadBooks();
     }
 
     public void loadBooks() { ;
-        this.books = fakeList;
+        this.products = fakeList;
     }
 
     public List<Book> getBooks() {
-        return books;
+        return products.stream()
+                .filter(book -> book.getCategory().equals("Book"))
+                .map(book -> (Book) book)
+                .collect(Collectors.toList());
+    }
 
+    public List<Movie> getMovies() {
+        return products.stream()
+                .filter(movie -> movie.getCategory().equals("Movie"))
+                .map(movie -> (Movie) movie)
+                .collect(Collectors.toList());
     }
 
     public List<Book> getAvailableBooks() {
-        return books.stream()
+        return getBooks().stream()
                 .filter(book -> !book.hasBeenCheckouted())
                 .collect(Collectors.toList());
 
@@ -33,7 +46,7 @@ public class Library {
                 .filter(book -> book.getTitle().equals(bookName))
                 .findFirst()
                 .orElse(null);
-        books.remove(selectedBook);
+        products.remove(selectedBook);
         return selectedBook;
     }
 
@@ -48,7 +61,7 @@ public class Library {
     }
 
     private void updateList(Book book) {
-        books.add(book);
+        products.add(book);
     }
 
     public boolean checkinBookByTitle(String bookName) {
