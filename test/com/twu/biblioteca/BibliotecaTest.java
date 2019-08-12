@@ -29,7 +29,7 @@ public class BibliotecaTest {
     public void shouldPrintMenu(){
         List<String> menu = BibliotecaApp.menu();
         assertEquals("1 - List of books" , menu.get(0));
-        assertEquals(4, menu.size());
+        assertEquals(5, menu.size());
     }
 
     @Test

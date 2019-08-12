@@ -50,7 +50,15 @@ public class BibliotecaApp {
                 else return "That is not a valid book to return.";
             }
             case 4: {
-                return library.getMovies().toString();
+                return library.getAvailableMovies().toString();
+            }
+            case 5: {
+                System.out.print("Inform the name of the movie: ");
+                String movieName = scan.nextLine();
+                boolean checkouted = library.checkoutMovieByTitle(movieName);
+
+                if (checkouted){ return "Thank you! Enjoy the movie";}
+                else return "Sorry, that movie is not available";
             }
             case 0: {
                 scan.close();
@@ -69,6 +77,7 @@ public class BibliotecaApp {
         menuItens.add("2 - Checkout a Book");
         menuItens.add("3 - Checkin a Book");
         menuItens.add("4 - List of Movies");
+        menuItens.add("5 - Checkout Movie");
         menuItens.add("0 - Exit");
         return menuItens;
     }

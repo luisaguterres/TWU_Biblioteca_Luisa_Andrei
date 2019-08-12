@@ -26,4 +26,8 @@ public class Movie extends Product {
                 ", rating " + rating +
                 '}';
     }
+
+    public String getName() {
+        return name;
+    }
 }

@@ -8,7 +8,6 @@ public class Book extends Product {
     private String title;
     private int publishYear;
     private String author;
-    private boolean checkout;
 
     @Override
     public String toString() {
@@ -16,7 +15,7 @@ public class Book extends Product {
                 "title '" + title + '\'' +
                 ", publishYear " + publishYear +
                 ", author " + author + '\'' +
-                ", checkout " + checkout + '\'' +
+                ", checkout " + hasBeenCheckouted() + '\'' +
                 '}';
     }
 
@@ -32,11 +31,5 @@ public class Book extends Product {
     public Object getTitle() {
         return this.title;
     }
-
-    public boolean hasBeenCheckouted(){
-        return this.checkout;
-    }
-
-    public void changeBookStatus(boolean status) { this.checkout = status; }
 
 }

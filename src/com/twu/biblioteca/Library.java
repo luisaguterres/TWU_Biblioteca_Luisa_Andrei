@@ -38,7 +38,12 @@ public class Library {
         return getBooks().stream()
                 .filter(book -> !book.hasBeenCheckouted())
                 .collect(Collectors.toList());
+    }
 
+    public List<Movie> getAvailableMovies() {
+        return getMovies().stream()
+                .filter(movie -> !movie.hasBeenCheckouted())
+                .collect(Collectors.toList());
     }
 
     public Book getBookByName(String bookName) {
@@ -46,30 +51,41 @@ public class Library {
                 .filter(book -> book.getTitle().equals(bookName))
                 .findFirst()
                 .orElse(null);
-        products.remove(selectedBook);
         return selectedBook;
+    }
+
+    public Movie getMovieByName(String movieName) {
+        Movie selectedMovie = getMovies().stream()
+                .filter(movie -> movie.getName().equals(movieName))
+                .findFirst()
+                .orElse(null);
+
+        return selectedMovie;
     }
 
     public boolean checkoutBookByTitle(String bookName) {
         Book selectedBook = getBookByName(bookName);
         if(selectedBook != null && !selectedBook.hasBeenCheckouted()){
-            selectedBook.changeBookStatus(true);
-            updateList(selectedBook);
+            selectedBook.changeStatus(true);
             return true;
         }
         return false;
     }
 
-    private void updateList(Book book) {
-        products.add(book);
+    public boolean checkoutMovieByTitle(String movieName) {
+        Movie selectedMovie = getMovieByName(movieName);
+        if(selectedMovie != null && !selectedMovie.hasBeenCheckouted()){
+            selectedMovie.changeStatus(true);
+            return true;
+        }
+        return false;
     }
 
     public boolean checkinBookByTitle(String bookName) {
         Book selectedBook = getBookByName(bookName);
         System.out.println("Book status "+selectedBook.hasBeenCheckouted());
         if(selectedBook != null && selectedBook.hasBeenCheckouted()){
-            selectedBook.changeBookStatus(false);
-            updateList(selectedBook);
+            selectedBook.changeStatus(false);
             return true;
         }
         return false;
