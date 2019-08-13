@@ -7,8 +7,6 @@ import org.junit.Test;
 import java.util.List;
 import java.util.Scanner;
 
-import static junit.framework.TestCase.*;
-import static org.hamcrest.core.IsInstanceOf.any;
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;

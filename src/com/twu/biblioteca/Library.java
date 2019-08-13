@@ -7,6 +7,11 @@ import java.util.stream.Collectors;
 
 public class Library {
     private List<Product> products;
+
+    private static List<User> users = new ArrayList<>(Arrays.asList(
+            new User("008-0007","password"),
+            new User("008-0005","password")
+    ));
     private static List<Product> fakeList = new ArrayList<>(Arrays.asList(
             new Book("Harry Potter", 2001, "J.K. Rolling"),
             new Movie("Matrix", 1999, "Lilly and Lana Wachowski", 8))
@@ -63,10 +68,11 @@ public class Library {
         return selectedMovie;
     }
 
-    public boolean checkoutBookByTitle(String bookName) {
+    public boolean checkoutBookByTitle(String bookName, User loggedUser) {
         Book selectedBook = getBookByName(bookName);
         if(selectedBook != null && !selectedBook.hasBeenCheckouted()){
             selectedBook.changeStatus(true);
+            loggedUser.checkoutBook(selectedBook);
             return true;
         }
         return false;
@@ -89,5 +95,19 @@ public class Library {
             return true;
         }
         return false;
+    }
+
+    public User loginUser(String libraryNumber, String password) {
+        User loggedUser = users.stream()
+                .filter(user -> user.getLibraryNumber().equals(libraryNumber) && user.getPassword().equals(password))
+                .findFirst()
+                .orElse(null);
+        return loggedUser;
+    }
+
+    public List<User> checkUsersWhoCheckedout(String bookTitle) {
+        List<User> usersWhoCheckedout = users.stream()
+                .filter(user -> user.hasCheckedoutBook(bookTitle)).collect(Collectors.toList());
+        return  usersWhoCheckedout;
     }
 }
