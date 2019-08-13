@@ -13,7 +13,7 @@ import static org.mockito.Mockito.when;
 
 public class BibliotecaTest {
     private Scanner scan;
-
+    private User mockedUser = mock(User.class);
     @Before
     public void before() {
         scan = mock(Scanner.class);
@@ -27,31 +27,31 @@ public class BibliotecaTest {
     public void shouldPrintMenu(){
         List<String> menu = BibliotecaApp.menu();
         assertEquals("1 - List of books" , menu.get(0));
-        assertEquals(5, menu.size());
+        assertEquals(7, menu.size());
     }
 
     @Test
     public void whenChooseMenuOptionShouldListdBooks(){
-        assertEquals("[{title 'Harry Potter', publishYear 2001, author J.K. Rolling', checkout false'}]", BibliotecaApp.loadMenuOption(1, scan));
+        assertEquals("[{title 'Harry Potter', publishYear 2001, author J.K. Rolling', checkout false'}]", BibliotecaApp.loadMenuOption(1, scan, mockedUser));
     }
 
     @Test
     public void shouldReturnSuccessMessageWhenCheckoutBook() {
         when(scan.nextLine()).thenReturn("Harry Potter");
-        assertEquals("Thank you! Enjoy the book", BibliotecaApp.loadMenuOption(2, scan));
+        assertEquals("Thank you! Enjoy the book", BibliotecaApp.loadMenuOption(2, scan, mockedUser));
     }
 
     @Test
     public void shouldReturnFailureMessageWhenCheckoutInexistentBook() {
         when(scan.nextLine()).thenReturn("Twilight");
-        assertEquals("Sorry, that book is not available", BibliotecaApp.loadMenuOption(2, scan));
+        assertEquals("Sorry, that book is not available", BibliotecaApp.loadMenuOption(2, scan, mockedUser));
     }
 
     @Test
     public void shouldReturnSuccessMessageWhenCheckintBook() {
         when(scan.nextLine()).thenReturn("Harry Potter");
-        BibliotecaApp.loadMenuOption(2, scan);
-        assertEquals("Thank you for returning the book.", BibliotecaApp.loadMenuOption(3, scan));
+        BibliotecaApp.loadMenuOption(2, scan, mockedUser);
+        assertEquals("Thank you for returning the book.", BibliotecaApp.loadMenuOption(3, scan, mockedUser));
     }
 
 //    @Test

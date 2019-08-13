@@ -17,7 +17,7 @@ public class BibliotecaApp {
         do{
             menu().stream().iterator().forEachRemaining(System.out::println);
             option = getMenuOptionSelected(scan);
-            System.out.println(loadMenuOption(option, scan));
+            System.out.println(loadMenuOption(option, scan, currentUser));
         }while (option != 0);
 
     }
@@ -40,7 +40,7 @@ public class BibliotecaApp {
         return option;
     }
 
-    public static String loadMenuOption(int selectedOption, Scanner scan) {
+    public static String loadMenuOption(int selectedOption, Scanner scan, User user) {
 
         switch (selectedOption){
             case 1: {
@@ -49,7 +49,7 @@ public class BibliotecaApp {
             case 2:{
                 System.out.println("Inform the name of the book: ");
                 String bookName = scan.nextLine();
-                boolean checkouted = library.checkoutBookByTitle(bookName, currentUser);
+                boolean checkouted = library.checkoutBookByTitle(bookName, user);
 
                 if (checkouted){ return "Thank you! Enjoy the book";}
                 else return "Sorry, that book is not available";
