@@ -9,8 +9,8 @@ public class Library {
     private List<Product> products;
 
     private static List<User> users = new ArrayList<>(Arrays.asList(
-            new User("008-0007","password"),
-            new User("008-0005","password")
+            new User("008-0007","password", "Mary", "mary@thoughtworks.com", 9876543),
+            new User("008-0005","password", "Steven", "steven@thoughtworks.com", 5674321)
     ));
     private static List<Product> fakeList = new ArrayList<>(Arrays.asList(
             new Book("Harry Potter", 2001, "J.K. Rolling"),

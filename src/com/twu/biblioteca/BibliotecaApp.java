@@ -14,6 +14,9 @@ public class BibliotecaApp {
         int option;
         Scanner scan = new Scanner(System.in);
         currentUser = askForLogin(scan);
+        System.out.println("---------------------------------");
+        System.out.println(currentUser.information());
+        System.out.println("---------------------------------");
         do{
             menu().stream().iterator().forEachRemaining(System.out::println);
             option = getMenuOptionSelected(scan);

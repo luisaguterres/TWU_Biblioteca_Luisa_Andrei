@@ -8,11 +8,17 @@ public class User {
     private String libraryNumber;
     private String password;
     private List<Book> checkoutBooks;
+    private String name;
+    private String email;
+    private Integer phoneNumber;
 
-    public User(String libraryNumber, String password) {
+    public User(String libraryNumber, String password, String name, String email, Integer phoneNumber) {
         this.libraryNumber = libraryNumber;
         this.password = password;
         this.checkoutBooks = new ArrayList<Book>();
+        this.name = name;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
     }
 
     public String getLibraryNumber() {
@@ -25,6 +31,18 @@ public class User {
 
     public List<Book> getCheckoutBooks() {
         return checkoutBooks;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public Integer getPhoneNumber() {
+        return phoneNumber;
     }
 
     public boolean hasCheckedoutBook(String bookTitle) {
@@ -43,5 +61,9 @@ public class User {
         return "{" +
                 "libraryNumber '" + libraryNumber + '\'' +
                 '}';
+    }
+
+    public String information(){
+        return "Name: "+ name +" / Email: "+email+ " / Phone number: "+phoneNumber;
     }
 }
